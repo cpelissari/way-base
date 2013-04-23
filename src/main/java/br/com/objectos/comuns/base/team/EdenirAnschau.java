@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Objectos, Fábrica de Software LTDA.
+ * Copyright 2013 Objectos, Fábrica de Software LTDA.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -33,7 +33,7 @@ import java.lang.annotation.Target;
   ElementType.ANNOTATION_TYPE,
   ElementType.PACKAGE })
 @Retention(RetentionPolicy.SOURCE)
-public @interface Moe {
+public @interface EdenirAnschau {
 
   String[] value() default "";
 

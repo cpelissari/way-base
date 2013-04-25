@@ -1,10 +1,8 @@
-objectos comuns :: base 
+objectos :: way :: base 
 =======================
-
 
 License
 -------
-
 Copyright 2011 objectos, fábrica de software LTDA
 
 Distributed under the Apache License, Version 2.0

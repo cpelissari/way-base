@@ -13,28 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package br.com.objectos.comuns.base.team;
+package br.com.objectos.way.base;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import com.google.common.primitives.Ints;
 
 /**
  * @author marcio.endo@objectos.com.br (Marcio Endo)
  */
-@Target({
-  ElementType.TYPE,
-  ElementType.FIELD,
-  ElementType.METHOD,
-  ElementType.PARAMETER,
-  ElementType.CONSTRUCTOR,
-  ElementType.LOCAL_VARIABLE,
-  ElementType.ANNOTATION_TYPE,
-  ElementType.PACKAGE })
-@Retention(RetentionPolicy.SOURCE)
-public @interface CaroleneBertoldi {
+public class CheckDigit {
 
-  String[] value() default "";
+  private final int[] data;
+
+  private final int digit;
+
+  CheckDigit(int[] data, int digit) {
+    this.data = data;
+    this.digit = digit;
+  }
+
+  public int intValue() {
+    return digit;
+  }
+
+  @Override
+  public String toString() {
+    String _data = Ints.join("", data);
+    return String.format("%s-%d", _data, digit);
+  }
 
 }

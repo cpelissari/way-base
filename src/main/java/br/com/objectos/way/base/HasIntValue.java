@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Objectos, Fábrica de Software LTDA.
+ * Copyright 2013 Objectos, Fábrica de Software LTDA.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,28 +13,13 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package br.com.objectos.comuns.base.team;
-
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+package br.com.objectos.way.base;
 
 /**
  * @author marcio.endo@objectos.com.br (Marcio Endo)
  */
-@Target({
-  ElementType.TYPE,
-  ElementType.FIELD,
-  ElementType.METHOD,
-  ElementType.PARAMETER,
-  ElementType.CONSTRUCTOR,
-  ElementType.LOCAL_VARIABLE,
-  ElementType.ANNOTATION_TYPE,
-  ElementType.PACKAGE })
-@Retention(RetentionPolicy.SOURCE)
-public @interface Moe {
+public interface HasIntValue {
 
-  String[] value() default "";
+  int intValue();
 
 }

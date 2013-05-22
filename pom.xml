@@ -29,11 +29,4 @@
 			<email>marcio.endo@objectos.com.br</email>
 		</developer>
 	</developers>
-	<dependencies>
-		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.0-api</artifactId>
-			<version>${hibernate.jpa2.version}</version>
-		</dependency>
-	</dependencies>
 </project>

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package br.com.objectos.comuns.base.team;
+package br.com.objectos.way.base.team;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

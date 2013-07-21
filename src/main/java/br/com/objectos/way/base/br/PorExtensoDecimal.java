@@ -43,6 +43,8 @@ class PorExtensoDecimal extends PorExtenso {
 
   @Override
   public String toString(double numero) {
+    numero = Math.abs(numero);
+
     List<String> list = newArrayList();
 
     int parteInteira = (int) numero;
